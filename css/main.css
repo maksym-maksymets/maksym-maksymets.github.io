@@ -1,24 +1,16 @@
-* { box-sizing: border-box; }
-body { margin: 0; font-family: Arial, sans-serif; }
-/* Спільні кольори, відступи та ширина сторінки. */
-body { background: #f4f7fa; color: #182b39; line-height: 1.6; }
-main, .header { max-width: 1040px; margin: auto; padding: 28px; }
-a { color: #185f8c; }
-.header { display: flex; justify-content: space-between; align-items: center; gap: 20px; border-bottom: 1px solid #cbd9e3; }
-.logo { font-weight: bold; text-decoration: none; }
-nav { display: flex; gap: 20px; }
-/* Картки з темами лабораторних робіт. */
-h1 { font-size: clamp(28px, 4vw, 44px); line-height: 1.2; }
-h2 { margin: 0 0 8px; font-size: 22px; }
-.tasks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 0; list-style-position: inside; }
-.tasks li { padding: 24px; background: white; border: 1px solid #cbd9e3; border-radius: 10px; }
-.tasks p { margin-bottom: 0; }
-/* Відомості про автора та розміщення на вузьких екранах. */
-.author { margin-top: 32px; padding: 24px; background: #e5eff6; border-radius: 10px; }
-@media (max-width: 650px) {
-  .header { align-items: flex-start; flex-direction: column; }
-  .tasks { grid-template-columns: 1fr; }
+body {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #222;
+  background: white;
 }
-
-/* Нижній блок сторінки після першої публікації. */
-footer { max-width: 1040px; margin: 24px auto 0; padding: 24px 28px; border-top: 1px solid #cbd9e3; color: #426079; }
+h1 { color: #24557a; }
+header { border-bottom: 1px solid #ccc; padding-bottom: 15px; }
+a { color: #24557a; }
+section { margin-top: 30px; }
+li { margin-bottom: 10px; }
+footer { margin-top: 40px; border-top: 1px solid #ccc; padding-top: 15px; }
